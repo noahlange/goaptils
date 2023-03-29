@@ -3,8 +3,10 @@ import type { StateData } from './types';
 export type Identifiable<T> = T & { id: string };
 
 export const _ = {
-  keys: <T>(value: T): (keyof T)[] => Object.keys(value) as (keyof T)[],
-  entries: <T>(value: T) => Object.entries(value) as [keyof T, T[keyof T]][]
+  keys: <T extends {}>(value: T): (keyof T)[] =>
+    Object.keys(value) as (keyof T)[],
+  entries: <T extends {}>(value: T) =>
+    Object.entries(value) as [keyof T, T[keyof T]][]
 };
 
 export const Calc = {
