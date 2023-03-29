@@ -11,5 +11,6 @@
     "strict": true,
     "importsNotUsedAsValues": "error"
   },
-  "include": ["src/**/*.ts", "pixi.d.ts"]
+  "include": ["src/**/*.ts", "pixi.d.ts"],
+  "exclude": ["src/**/*.test.ts"]
 }
