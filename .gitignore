@@ -1,6 +1,8 @@
 node_modules
 .vscode
 lib
+cjs
+esm
 src/tests
 types
 .DS_Store

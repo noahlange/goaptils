@@ -1,11 +1,13 @@
 {
   "name": "goaptils",
   "version": "0.0.0",
-  "module": "./lib/index.js",
+  "main": "./cjs/index.js",
+  "module": "./esm/index.js",
   "types": "./types/index.d.ts",
-  "type": "module",
   "scripts": {
     "prepare": "tsc",
+    "build:esm": "tsc --module esnext --outdir esm",
+    "build:cjs": "tsc --module commonjs --outdir cjs",
     "dev:test": "jest",
     "dev:pretty": "prettier --write 'src/**/*'",
     "dev:lint": "eslint --fix 'src/**/*'",
