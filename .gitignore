@@ -3,6 +3,5 @@ node_modules
 lib
 cjs
 esm
-src/tests
 types
 .DS_Store

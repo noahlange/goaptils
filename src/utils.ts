@@ -1,11 +1,11 @@
 import type { StateData } from './types';
 
-export type Identifiable<T> = T & { id: string };
+export type Identifiable<T> = T & { id: string |number };
 
 export const _ = {
-  keys: <T extends {}>(value: T): (keyof T)[] =>
+  keys: <T extends object>(value: T): (keyof T)[] =>
     Object.keys(value) as (keyof T)[],
-  entries: <T extends {}>(value: T) =>
+  entries: <T extends object>(value: T) =>
     Object.entries(value) as [keyof T, T[keyof T]][]
 };
 

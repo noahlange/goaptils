@@ -1,16 +1,17 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
+    "target": "ESNext",
+    "module": "ESNext",
     "esModuleInterop": true,
-    "moduleResolution": "node",
+    "moduleResolution": "Node",
     "declaration": true,
     "declarationDir": "types",
     "rootDir": "src",
     "outDir": "lib",
     "strict": true,
-    "importsNotUsedAsValues": "error"
+    "verbatimModuleSyntax": true,
+    "skipLibCheck": true
   },
-  "include": ["src/**/*.ts", "pixi.d.ts"],
-  "exclude": ["src/**/*.test.ts"]
+  "include": ["./src/**/*.ts"],
+  "exclude": ["./node_modules/.vite"]
 }

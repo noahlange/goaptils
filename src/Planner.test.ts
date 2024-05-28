@@ -1,3 +1,5 @@
+import { describe, test, expect } from 'vitest';
+
 import { Planner } from './Planner';
 import { Condition } from './types';
 
